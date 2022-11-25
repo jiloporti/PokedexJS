@@ -16,7 +16,7 @@ body{
 
 main{
     display: inline-block;
-    margin-top: 2%;
+    margin-top: 5%;
     padding: 15px;
     position: relative;
 }
@@ -109,4 +109,36 @@ main{
 
 .theme:active{
     width: 15px;
+}
+
+.typeInfo{
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    justify-content: center;
+    width: 30%;
+    max-height: 50px;
+    margin: 0 auto;
+}
+
+.tipo1{
+    color: #FFFFFF;
+    text-align: center;
+    background-color: red;
+    font-weight: 700;
+    font-size: clamp(10px, 7vw, 28px);
+    padding: 5px;
+    margin: 3px 0;
+    width: 100%;
+}
+
+.tipo2{
+    color: #FFFFFF;
+    text-align: center;
+    background-color: red;
+    font-weight: 700;
+    font-size: clamp(10px, 7vw, 28px);
+    padding: 5px;
+    margin: 3px 0;
+    width: 100%;
 }

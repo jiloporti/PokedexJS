@@ -25,3 +25,7 @@
 <img src="/images/extension.png" alt="imagem com a extensão no google chrome">
 
 ### Para instalar basta clonar o repositório, ir nas opções de extensão e habilitar o modo desenvolvedor. Clique em Carregar sem compactação e selecione o local do diretório.
+
+##
+
+### Atualização: Aplicação mostra os tipos do pokémon com a cor correspondente no background do texto. Sprite de todos os pokémon até a geração mais recente disponível na PokeAPI.

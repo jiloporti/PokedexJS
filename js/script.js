@@ -39,7 +39,7 @@ const renderPokemon = async (pokemon) => {
         pokemonName.innerHTML = data.name;
         pokemonNumber.innerHTML = data.id;
         // utilizar [] para fazer o caminho pq usando o . ele não entende os outros sinais.
-        pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+        pokemonImage.src = data['sprites']['front_default'];
         searchPokemon = data.id;
         input.value = "";
 
@@ -49,9 +49,91 @@ const renderPokemon = async (pokemon) => {
         for(var i = 0; i < tipo.length; i++){
             if(i >= 1){
                 typeData2.innerHTML = data['types']['1']['type']['name'];
+                var tipoInfo2 = data['types']['1']['type']['name'];
+                typeData2.style.display = "block";
+                
             }else{
                 typeData2.innerHTML = "";
+                typeData2.style.display = "none";
             }
+        }
+
+        // com certeza tem um jeito mais fácil de fazer isso
+        var tipoInfo = data['types']['0']['type']['name'];
+        if(tipoInfo == "bug"){
+            typeData.style.background = "#90C12D";
+        }else if(tipoInfo == "dark"){
+            typeData.style.background = "#5B5568";
+        }else if(tipoInfo == "dragon"){
+            typeData.style.background = "#0B6DC3";
+        }else if(tipoInfo == "electric"){
+            typeData.style.background = "#F4D23C";
+        }else if(tipoInfo == "fairy"){
+            typeData.style.background = "#ED95E1";
+        }else if(tipoInfo == "fighting"){
+            typeData.style.background = "#CE416B";
+        }else if(tipoInfo == "fire"){
+            typeData.style.background = "#FF9D55";
+        }else if(tipoInfo == "flying"){
+            typeData.style.background = "#CCDFFF";
+        }else if(tipoInfo == "ghost"){
+            typeData.style.background = "#5269AD";
+        }else if(tipoInfo == "grass"){
+            typeData.style.background = "#5EBC61";
+        }else if(tipoInfo == "ground"){
+            typeData.style.background = "#D97845";
+        }else if(tipoInfo == "ice"){
+            typeData.style.background = "#89AAE3";
+        }else if(tipoInfo == "normal"){
+            typeData.style.background = "#919aa2";
+        }else if(tipoInfo == "poison"){
+            typeData.style.background = "#B567CE";
+        }else if(tipoInfo == "psychic"){
+            typeData.style.background = "#FB8785";
+        }else if(tipoInfo == "rock"){
+            typeData.style.background = "#F2E4B7";
+        }else if(tipoInfo == "steel"){
+            typeData.style.background = "#B4DBE9";
+        }else if(tipoInfo == "water"){
+            typeData.style.background = "#5090D6";
+        }
+        // com certeza mesmo tem um jeito mais fácil de fazer isso, mas eu não pensei ainda.
+        if(tipoInfo2 == "bug"){
+            typeData2.style.background = "#90C12D";
+        }else if(tipoInfo2 == "dark"){
+            typeData2.style.background = "#5B5568";
+        }else if(tipoInfo2 == "dragon"){
+            typeData2.style.background = "#0B6DC3";
+        }else if(tipoInfo2 == "electric"){
+            typeData2.style.background = "#F4D23C";
+        }else if(tipoInfo2 == "fairy"){
+            typeData2.style.background = "#ED95E1";
+        }else if(tipoInfo2 == "fighting"){
+            typeData2.style.background = "#CE416B";
+        }else if(tipoInfo2 == "fire"){
+            typeData2.style.background = "#FF9D55";
+        }else if(tipoInfo2 == "flying"){
+            typeData2.style.background = "#CCDFFF";
+        }else if(tipoInfo2 == "ghost"){
+            typeData2.style.background = "#5269AD";
+        }else if(tipoInfo2 == "grass"){
+            typeData2.style.background = "#5EBC61";
+        }else if(tipoInfo2 == "ground"){
+            typeData2.style.background = "#D97845";
+        }else if(tipoInfo2 == "ice"){
+            typeData2.style.background = "#89AAE3";
+        }else if(tipoInfo2 == "normal"){
+            typeData2.style.background = "#919aa2";
+        }else if(tipoInfo2 == "poison"){
+            typeData2.style.background = "#B567CE";
+        }else if(tipoInfo2 == "psychic"){
+            typeData2.style.background = "#FB8785";
+        }else if(tipoInfo2 == "rock"){
+            typeData2.style.background = "#F2E4B7";
+        }else if(tipoInfo2 == "steel"){
+            typeData2.style.background = "#B4DBE9";
+        }else if(tipoInfo2 == "water"){
+            typeData2.style.background = "#5090D6";
         }
 
         console.log(data);
