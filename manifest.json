@@ -1,0 +1,17 @@
+{
+    "name": "Pokedex",
+    "description": "Pokedex para consultar informações de pokemon!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "images/grass.png",
+        "32": "images/grass.png",
+        "48": "images/grass.png",
+        "128": "images/grass.png"
+    },
+    "author": "Giovani Porti"
+}

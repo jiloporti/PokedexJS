@@ -11,6 +11,7 @@ body{
     text-align: center;
     background: linear-gradient(to bottom, #6af5bb, #fff);
     height: 100vh;
+    min-width: 340px;
 }
 
 main{
